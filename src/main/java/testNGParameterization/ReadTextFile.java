@@ -17,6 +17,7 @@ public class ReadTextFile {
 		System.out.println(i+"\n");
 		}
 		br.close();
+		System.out.println("reading done");
 	}
 
 }
