@@ -3,5 +3,7 @@ node{
              checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/vijayakaranki/maven.git']]])
    }
     stage("build"){
+    sh label: '', script: 'mvn clean package'
+    }
     
 }
